@@ -56,6 +56,8 @@ h2{font-family:var(--sans);font-weight:600;font-size:clamp(21px,3vw,28px);line-h
 .hero__price{display:inline-flex;align-items:center;gap:12px;padding:10px 20px;background:var(--bg-2);border:1px solid var(--gold-soft);border-radius:999px;margin-bottom:22px;font-size:13.5px;color:var(--ink-2)}
 .hero__price strong{color:var(--gold);font-weight:600;font-size:15px}
 .hero__price span{color:var(--ink-4)}
+.hero__trust{display:block;font-size:12.5px;color:var(--ink-4);margin-top:14px}
+.hero__trust b{color:var(--gold-warm);font-weight:500}
 
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 32px;min-height:50px;font-family:var(--sans);font-weight:500;font-size:15px;border-radius:999px;transition:transform .18s var(--ease),background .18s var(--ease),box-shadow .18s var(--ease);white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -79,6 +81,17 @@ h2{font-family:var(--sans);font-weight:600;font-size:clamp(21px,3vw,28px);line-h
 .why{border-top:1px solid var(--line);text-align:center}
 .why h2{margin-bottom:14px}
 .why p{font-size:15.5px;line-height:1.95;color:var(--ink-3);max-width:600px;margin:0 auto}
+
+/* Voices — client testimonial */
+.voices{border-top:1px solid var(--line);text-align:center}
+.voices h2{margin-bottom:28px}
+.voice{max-width:600px;margin:0 auto;background:var(--bg-2);border:1px solid var(--gold-soft);border-radius:16px;padding:clamp(28px,5vw,36px) clamp(22px,4vw,30px);display:flex;flex-direction:column;align-items:center;position:relative}
+.voice__avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;border:2px solid var(--gold-line);box-shadow:0 8px 24px -14px rgba(201,169,97,0.5);margin-bottom:16px}
+.voice__avatar img{width:100%;height:100%;object-fit:cover}
+.voice__stars{color:var(--gold);letter-spacing:4px;font-size:15px;margin-bottom:16px}
+.voice__quote{font-size:15.5px;line-height:2.05;color:var(--ink-2);margin-bottom:20px}
+.voice__name{font-size:14px;font-weight:600;color:var(--gold-warm)}
+.voice__role{display:block;font-size:12.5px;font-weight:400;color:var(--ink-4);margin-top:3px}
 
 /* FAQ */
 .faq{border-top:1px solid var(--line)}
@@ -141,6 +154,7 @@ h2{font-family:var(--sans);font-weight:600;font-size:clamp(21px,3vw,28px);line-h
         <span class="btn__arrow" aria-hidden="true">←</span>
       </a>
     </div>
+    <span class="hero__trust"><b>ضمان استرجاع كامل</b> · متابعة 60 يوماً · جلسة عبر Google Meet</span>
   </div>
 </section>
 
@@ -194,6 +208,24 @@ h2{font-family:var(--sans);font-weight:600;font-size:clamp(21px,3vw,28px);line-h
   </div>
 </section>
 
+<section class="voices section">
+  <div class="wrap">
+    <h2>ماذا قالوا بعد الجلسة</h2>
+    <figure class="voice">
+      <div class="voice__avatar">
+        <img src="sanad.jpg" alt="سند بن حمد بن خلفان آل تويّه" loading="lazy" width="96" height="96">
+      </div>
+      <div class="voice__stars" aria-label="تقييم خمس نجوم">★★★★★</div>
+      <blockquote class="voice__quote">
+        شكراً مروان على الاستشارة الجميلة، ما قصّرت أبداً جزاك الله خير. استفدت منك كثير وعرفت المشاكل اللي عندي وعلاج الآلام اللي كنت أحسّ فيها، ونقاط القوة والضعف اللي عندي، وأقدر أعيد هيكلة الشغل والمحتوى بخارطة طريق واضحة أقدر من خلالها إني أبدأ وأمشي صح. حسّيتني طلعت من الاستشارة إنسان مختلف وعنده طريق واضح يمشي عليه.
+      </blockquote>
+      <figcaption class="voice__name">
+        سند بن حمد بن خلفان آل تويّه
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
 <section class="faq section">
   <div class="wrap">
     <h2>أسئلةٌ شائعة</h2>
@@ -237,7 +269,7 @@ h2{font-family:var(--sans);font-weight:600;font-size:clamp(21px,3vw,28px);line-h
       احجز موعدك الآن
       <span class="btn__arrow" aria-hidden="true">←</span>
     </a>
-    <p class="final__guarantee">إذا ما كنت سعيد من الجلسة، بتسترجع مبلغك بدون أي سؤال.</p>
+    <p class="final__guarantee">إذا ما كنت سعيد من الجلسة، بترجع لك مبلغك بالكامل بدون أي سؤال.</p>
     <p class="final__note">147$ · ساعة استشارة · متابعة 60 يوماً</p>
   </div>
 </section>
